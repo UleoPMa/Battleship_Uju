@@ -51,40 +51,6 @@ function boardGeneration(type) {
       }
     }
   }
-  else if(type == "PS"){
-    const boardPlayerShoots = document.getElementById('shootsPlayer');
-    for(let x = 1;x<=9;x++){
-      let divFilas = document.createElement('div');
-      divFilas.className = "filas";
-      boardPlayerShoots.appendChild(divFilas);
-      for(let y = 1;y<=10;y++){
-        let positionY = document.createElement('div');
-        positionY.className = "columnas";
-        positionY.id = `position${x}${y}${type}`;
-        positionY.addEventListener('click', () => {
-          handleClick(positionY.id);
-        });
-        divFilas.appendChild(positionY);
-      }
-    }
-  }
-  else if(type == "MS"){
-    const boardMachineShoots = document.getElementById('shootsComputer');
-    for(let x = 1;x<=9;x++){
-      let divFilas = document.createElement('div');
-      divFilas.className = "filas";
-      boardMachineShoots.appendChild(divFilas);
-      for(let y = 1;y<=10;y++){
-        let positionY = document.createElement('div');
-        positionY.className = "columnas";
-        positionY.id = `position${x}${y}${type}`;
-        positionY.addEventListener('click', () => {
-          handleClick(positionY.id);
-        });
-        divFilas.appendChild(positionY);
-      }
-    }
-  }
 }
 
 
