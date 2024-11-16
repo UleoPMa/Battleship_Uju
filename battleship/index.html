@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Battleship</title>
+  <link rel="stylesheet" href="/style.css">
+</head>
+<body>
+  <header>
+    <div id="title1"><h1>BATTLESHIP by UJU</h1></div>
+  </header>
+
+  <!--Div flotante para ingresar el nombre de usuario-->
+  <div id="playerInfo">
+    <div id="playerSesion">
+      <label for="name">Nombre:</label>
+      <input type="text" id="name" autocomplete="off">
+      <button type="button" id="submitInfo">JUGAR</button>
+    </div>
+    <div id="top3"></div>
+  </div>
+
+
+<!--Div del juego-->
+  <div id="boards">
+    <div id="playerBoard">
+      <div><h2>Jugador</h2></div>
+      <div>
+        <div id="shootsPlayer" class="board"></div>
+        <div id="player-board" class="board"></div>
+        <div id="playerControls"></div>
+      </div>
+    </div>
+
+    <div id="pcBoard">
+      <div><h2>Máquina</h2></div>
+      <div>
+        <div id="shootsComputer" class="board"></div>
+        <div id="computer-board" class="board"></div>
+        <div id="playerControls"></div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="/main.js"></script>
+</body>
+</html>
